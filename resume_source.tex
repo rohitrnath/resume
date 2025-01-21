@@ -1,0 +1,279 @@
+%-------------------------
+% Resume in Latex
+% Author : Rohit R Nath
+% Based off of: https://github.com/rohitrnath/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      % \textit{\small#3} & \textit{\small #4} 
+      {\small#3} & {\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    {\Large  \scshape \textbf{ROHIT R NATH}} \\ \vspace{0.5pt}
+    % \small \raisebox{-0.1\height}\faPhone\ (510) 714-7721~
+    Mobile: (+91)7012738264
+    % \href{rohitkalanjoor@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ 
+    Email: \underline{rohitkalanjoor@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/rohitrnath/}
+     {\underline{www.linkedin.com/in/rohitrnath}}  ~
+    \href{https://github.com/rohitrnath}{\underline{github.com/rohitrnath}}
+    \vspace{-14pt}
+\end{center}
+
+%\section{About}
+%Senior engineer with 7+ years of experience in ADAS, AI/ML and IoT, keen on utilizing machine learning and software design methodologies to tackle intricate challenges.
+ 
+ \vspace{-10pt}
+
+\section{Education} 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Indian Institute Of Technology, Madras}}{SEP 2024 - Present}{Masters in Industrial Artificial Intelligence, Chemical Engineering}{Chennai, India}
+    \vspace{-5pt}
+    \resumeSubheading
+      {Cochin University Of Science and Technology}{AUG 2013 - JUN 2017}
+      {Bachelors in Electronics and Communication Engineering}{Chengannur, India}            
+  \resumeSubHeadingListEnd  
+ \vspace{-15pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming:} { C/C++, Python, Data Structures and Algorithms (DSA), Linux System programming, IPC, Shell Scripting} \\
+     \textbf{Domains:} { Computer Vision, Deep learning( vision), Edge AI, Embedded Software, ADAS Perception and Planning, V2X, Robotics} \\
+     \textbf{Frameworks, Libraries:} {PyTorch, Tensorflow, Keras, ONNX, HuggingFace, Scikit‐learn, OpenCV, GStreamer, AWS - EC2, Lambda, Qualcomm - SNPE, QNN, FastCV} \\
+     \textbf{Machine Learning:} {Object Detection and Tracking, Depth Estimation, Segmentation, Classification, Autoencoder, VLMs (ViT, CLIP, StableDiffusion), Quantization, Pruning} \\ 
+     % \textbf{Testing, QA:} {Software Quality Assurance (QA), Software Integration, Manual, Automated and A/B Testing} \\
+     \textbf{Miscellaneous:} {JIRA, Git, GDB,  Wireshark, Data Visualization, CARLA Simulator, Sensor Modeling} \\
+    }}
+ \end{itemize}
+ \vspace{-23pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Technical Lead, Autonomous Driving}{OCT 2023 -- Present}
+      {\textbf{KPIT Technologies}}{Pathpartner, Bangalore} 
+    \resumeItemListStart
+        \resumeItem{Designing and developing real-time perception and planning solutions for ADAS.} 
+        \resumeItem{ Technical guidance, collaboration with stakeholders, incremental product development, sprint execution, feature design and development are my daily tasks.}
+        \resumeItem{Leading a team of 9 engineers for surround view and autonomous parking solution development for HPC} 
+        \resumeItem{Developed a deep learning based path planning solution for autonomous parking}
+        \resumeItem{Developed test suites based on Carla simulator and rFpro simulators for demonstrating the 360 surround view and auto parking solutions}
+        \resumeItem{Sensor modeling of fisheye cameras using cubemap to fisheye projection with kannala-bandth distortion which matches with the physical camera calibrations.}
+        \resumeItem{Designed sensor fusion and sensor synchronization modules for Camera and Radar fusion}
+    \resumeItemListEnd
+  
+    \resumeSubheading
+      {Senior Research Engineer, Autonomous Driving}{OCT 2021 -- OCT 2023}
+      {\textbf{KPIT Technologies}}{Pathpartner, Bangalore}      
+    \resumeItemListStart
+        \resumeItem{Optimal implementation of low complex DL models and porting to QC platforms using Qualcomm's AI SDKs (QNN and SNPE)}
+        \resumeItem{Optimization and  Quantization of DL models using AIMET without loss in accuracy.}
+        \resumeItem{Integrated the developed model with multi-camera applications running on qualcomm QNX hardware.}
+        \resumeItem{Developed light-weight deep learning models for various ADAS applications including object detection, parking slot segmentation and monocular depth estimation.}
+    \resumeItemListEnd    
+    \resumeSubheading
+      {Software Engineer, V2X Applications}{DEC 2018 -- SEP 2021}
+      {\textbf{Danlaw Inc}}{Bangalore, India}      
+      \resumeItemListStart
+      \resumeItem{ Developed V2X (Vehicle to Everything) based ADAS applications such as FCW, IMA, BSW, RLVW etc.} 
+        
+        \resumeItem{Developed \textbf{core algorithms} of safety applications including Red-light Violation Warning (RLVW), Pedestrian Detection (PEDINX), and Signal Request for Emergency Vehicles (SRA), enhancing road safety and traffic management}     
+        \resumeItem{Developed vehicle misbehaviour detection algorithm to detect the cyber threats in the V2X network}
+        \resumeItem{Implemented a real-time pedestrian detection leveraging \textbf{YOLOv4 tiny}}
+        \resumeItem{Implemented a custom ligh weight autoencoder model  for road map reconstruction from the minimal surround information  for V2X applications.}
+        \resumeItem{Developed various middleware applications for V2X adhering the microservice architecture.}
+        \resumeItem{Developed GNSS Manager module, a common interface for various GPS protocols(UBX, NMEA) and deployed on OBU( On Board Unit) having high-precision GPS sensors such as Ublox M8U and M8L.}
+        \resumeItem{Developed Vehicle Gateway module to read vehicle CAN data over socket-CAN and real-time abstraction of the vehicle data required by safety applications.}
+        \resumeItem{Leading a team of 3 engineers for V2X HMI development, also provided guidance and mentorship.}   
+        \resumeItem{Introduced CARLA based HIL setup for V2X safety application testing which drastically reduced the in-vehicle testing dependencies.}       
+      \resumeItemListEnd
+      \resumeSubheading
+      {Resource Person, Fablab}{Jan 2018 -- May 2018}
+      {\textbf{CEC}}{Chengannur, Kerala}      
+    \resumeItemListStart
+        \resumeItem{Conducted training programs on IOT, embedded systems, PCB design and project design.}
+        \resumeItem {Project Mentor for Diploma, B.Tech and M.Tech students for their academic projects.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+
+%-----------OPEN PROJECTS-----------
+\section{Open Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {\href{https://lnkd.in/gnhshkGE}{\textbf{ClipVision DriveSense - Data selection tool for vision application}}} {APR 2023 - MAY 2023}  
+          {Self Research}{}  
+          \resumeItemListStart
+            \resumeItem{\textbf{ClipVision DriveSense} is a proof-of-concept designed for seamless data selection for perception model training, particularly in the automotive industry.} \resumeItem{Using the power of the Open CLIP model, the app efficiently filters relevant images from videos based on prompts.}
+            \resumeItem{\textbf{Tools:} Pytorch, CLIP Model, Huggingface, Streamlit}
+            \resumeItemListEnd
+        \resumeSubheading
+        {\href{https://www.youtube.com/watch?v=FHNcTUFAJYA}{\textbf{No-Code AI Web Application for Researchers}}} {FEB 2021 - APR 2021}  
+          {Derbi Hackathon}{}  
+          \resumeItemListStart            
+            \resumeItem{A simple easy to use deep learning model trainer. You can train your model without any knowledge on deeplearning or programming.} \resumeItem{The web application supports Image classification and gradCAM visualization for explainable AI. This platform is useful for Researchers in Medical domain.}
+            \resumeItem{\textbf{Tools:} Pytorch, Gradcam, Image classification AWS EC2, Lambda, HTML5}
+         \resumeItemListEnd
+        \resumeSubheading
+        {\href{https://github.com/rohitrnath/Advanced-Time-Series-Analysis}{\textbf{Advanced Time Series Analysis}}} {NOV 2024 - DEC 2024}  
+          {Advised by Prof. Babji Sreenivas}{}  
+          \resumeItemListStart            
+            \resumeItem{investigates time series modeling techniques applied to two distinct datasets:Airline passenger traffic and Nifty50 stock market index.}
+            \resumeItem{Employing statistical methods such as ARIMA, SARIMA, and the deep-learning based Prophet model.}
+         \resumeItemListEnd    
+        \resumeSubheading
+          {\href{https://github.com/rohitrnath/Monocular-Depth-Estimation-and-Segmentation}{\textbf{Monocular Depth Estimation and Segmentation}}} {JAN 2020 - MAR 2020}  
+          {Advised by Prof. Rohan Shravan}{}  
+          \resumeItemListStart   
+          \resumeItem{Monocular Depth Estimation and Segmentation A custom CNN model, CNN-Network that can do monocular depth estimation and foreground-background separation simultaneously was build.}
+          \resumeItem{My custom autoencoder model consist of dilation kernels, depthwise separable convolutions, Atrous convolution and pixel shuffling.}  
+        \resumeItemListEnd           
+        
+        \resumeSubheading
+        {\href{https://github.com/rohitrnath/Autopilot-System}{\textbf{GPS based Autopilot system}}} {SEP 2016 - MAR 2017}  
+          {Advised by Prof. Liju Philip}{}  
+          \resumeItemListStart            
+            \resumeItem{We have developed an Autopilot system based on GPS and magnetometer (electronic compass). The system can be mounted on a UAV Drone or a boat or even a submarine or a car (RC toys).}
+            \resumeItem{\textbf{Tools:} Atmega328, GNSS - Ublox Neo-8l, Magnetometer - HMC5883l, Differential mototr driver, C/C++,Python, Kalman filter, Trignometry, geo-fencing}
+         \resumeItemListEnd
+          \vspace{5pt}
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItemListStart            
+        \resumeItem{\textbf{Growth and Learning Champion - KPIT 2024}}
+        \resumeItem{\textbf{The Distinguished Contributor - KPIT 2023, 2024}}
+        \resumeItem{\textbf{Danlaw Order of Excellence – Platinum 2019.}}
+        \resumeItem{\textbf{Wit-Hustle hackathon winner.}}
+        \resumeItem{\textbf{Topper in EVA4 phase 1 and phase 2}}
+        \resumeItem{\textbf{Listed in India’s top 10 Arduino developer freelancers to hire in Upwork for June 2017.}}
+        \resumeItem{\textbf{IEEE robotics society R\&D team coordinator 2015-16.}}
+    \resumeItemListEnd
+ \end{itemize}
+ %\vspace{pt}
+ 
+%-----------COURCES & CERTIFICATIONS-----------
+\section{Courses And Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItemListStart
+        
+        \resumeItem{\textbf{Advanced Embedded System Certification from Vector India, Bangalore.}}
+        
+        \resumeItem{\textbf{Extended Vision AI(EVA4), Inkers.ai (theschoolofai.in)}}
+
+        \resumeItem{\textbf{\href{https://coursera.org/share/8784f478e9435b6ae0625a8e978c294f}{Reinforcement Learning Specialization by University of Alberta }}}
+        \resumeItem{\textbf{\href{https://coursera.org/share/cf96446eba343a6b0e1ca52d6d434e86}{Control Of Mobile Robots by Georgia Institute of Technology.}}}
+        \resumeItem{\textbf{\href{https://coursera.org/share/fa01dcec7f57891450ff104b54ad83f0}{Robot Localization with Particle Filters}}}
+        \resumeItem{\textbf{\href{https://jovian.ml/certificate/MFQWCOJRHE}{Zero to GAN in Deep Learning by Jovian.ml}}}
+    \resumeItemListEnd
+ \end{itemize}
+ \vspace{-23pt}
+    
+\end{document} 
